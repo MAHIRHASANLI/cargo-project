@@ -5,8 +5,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import "../style.css";
-
 // import required modules
 import { Navigation, Pagination } from "swiper/modules";
 
@@ -15,39 +13,39 @@ const array = [
         name: "Serena",
         email: "sena.com",
         title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempore, ducimus tenetur vitae aspernatur dignissimos natus dolore nihil porro non.",
-        image: "https://dthezntil550i.cloudfront.net/ha/latest/ha1810280446487590005970747/62597934-3fdd-4b55-a76f-f1c875ae5666.png"
+        image: "https://e1.pxfuel.com/desktop-wallpaper/128/834/desktop-wallpaper-hot-girl-random-girl.jpg"
     },
     {
         name: "Natalia",
         email: "natalia.com",
         title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempore, ducimus tenetur vitae aspernatur dignissimos natus dolore nihil porro non.",
-        image: "https://dthezntil550i.cloudfront.net/ha/latest/ha1810280446487590005970747/62597934-3fdd-4b55-a76f-f1c875ae5666.png"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR0qrFtIqXKB2M3P8zNGAHtZBmtkkJzKFTuQ&usqp=CAU"
     },
     {
         name: "Serena",
         email: "sena.com",
         title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempore, ducimus tenetur vitae aspernatur dignissimos natus dolore nihil porro non.",
-        image: "https://dthezntil550i.cloudfront.net/ha/latest/ha1810280446487590005970747/62597934-3fdd-4b55-a76f-f1c875ae5666.png"
+        image: "https://e1.pxfuel.com/desktop-wallpaper/128/834/desktop-wallpaper-hot-girl-random-girl.jpg"
     },
     {
         name: "Serena",
         email: "sena.com",
         title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempore, ducimus tenetur vitae aspernatur dignissimos natus dolore nihil porro non.",
-        image: "https://dthezntil550i.cloudfront.net/ha/latest/ha1810280446487590005970747/62597934-3fdd-4b55-a76f-f1c875ae5666.png"
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR0qrFtIqXKB2M3P8zNGAHtZBmtkkJzKFTuQ&usqp=CAU"
     },
     {
         name: "Serena",
         email: "sena.com",
         title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempore, ducimus tenetur vitae aspernatur dignissimos natus dolore nihil porro non.",
-        image: "https://dthezntil550i.cloudfront.net/ha/latest/ha1810280446487590005970747/62597934-3fdd-4b55-a76f-f1c875ae5666.png"
+        image: "https://e1.pxfuel.com/desktop-wallpaper/128/834/desktop-wallpaper-hot-girl-random-girl.jpg"
     }
 ]
 
 const TestimonialSection = () => {
     return (
-        <section className='lg:h-[90vh] bg-[#A074E8]'>
-            <div className='lg:max-w-[75%] md:max-w-[80%] w-[90%] mx-auto'>
-                <h2 className='mb-4 text-[28px] font-[600] leading-none text-center tracking-tight text-gray-900 md:text-[40px] lg:text-[44px] dark:text-white' data-aos="fade-down" data-aos-delay="100">Testimonials</h2>
+        <section className='bg-[#A074E8] py-[100px]' data-aos="fade-up">
+                <h2 className='mb-4 text-[28px] font-[600] leading-none  tracking-tight text-[white] text-center md:text-[40px] lg:text-[44px] dark:text-white' data-aos="fade-down" data-aos-delay="100">Testimonials</h2>
+            <div className='lg:max-w-[75%] md:max-w-[80%] w-[95%] mx-auto pt-[50px]'>
                 <Swiper
                     breakpoints={{
                         // when window width is >= 480px
@@ -77,14 +75,16 @@ const TestimonialSection = () => {
                     {
                         array && array.map((item, ind) => {
                             return (
-                                <SwiperSlide className='flex justify-center items-center bg-[red] rounded-[12px] h-[300px]' key={ind}>
-                                    <div className='bg-[red]'>
-                                        <img src={item.image} alt={item.name} />
+                                <SwiperSlide className='rounded-[12px]' key={ind}>
+                                    <div className='flex justify-between items-start md:gap-x-5 gap-x-4 rounded-[12px] h-[220px] w-full md:px-[50px] px-[30px] py-[30px] relative'>
+                                    <div className=' h-full w-[200px] flex justify-center items-start'>
+                                        <img className='w-[60px] h-[60px] object-cover rounded-[50%] ' src={item.image} alt={item.name}/>
                                     </div>
-                                    <div>
-                                        <h5>{item.name}</h5>
-                                        <p>{item.email}</p>
-                                        <p>{item.title}</p>
+                                    <div className='text-start'>
+                                        <h5 className='text-[17px] font-normal'>{item.name}</h5>
+                                        <p className='text-[13px] mb-[10px]'>{item.email}</p>
+                                        <p className='text-[12px]'>{item.title}</p>
+                                    </div>
                                     </div>
                                 </SwiperSlide>
                             )

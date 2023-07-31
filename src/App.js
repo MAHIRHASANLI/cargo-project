@@ -1,9 +1,12 @@
 import React from 'react'
 import Header from './Components/Header'
-import HeroSection from './Components/Hero'
-import AboutSection from './Components/About'
-import ServicesSection from './Components/Services'
-import TestimonialSection from './Components/Testimonial'
+import HeroSection from './pages/Hero'
+import AboutSection from './pages/About'
+import ContactSection from './pages/Contact'
+import ServicesSection from './pages/Services'
+import TestimonialSection from './pages/Testimonial'
+import TopFooterSection from './Components/Footer.Top'
+import BottomFooterSection from './Components/Footer.bottom'
 
 const App = () => {
   return (
@@ -13,6 +16,9 @@ const App = () => {
       <AboutSection/>
       <ServicesSection/>
       <TestimonialSection/>
+      <ContactSection/>
+      <TopFooterSection/>
+      <BottomFooterSection/>
     </>
   )
 }

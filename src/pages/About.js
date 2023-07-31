@@ -1,7 +1,7 @@
 
 const AboutSection = () => {
     return (
-        <section className='w-[100%] py-6'>
+        <section className='w-[100%] pb-4'>
             <div className='lg:max-w-[75%] md:max-w-[80%] w-[90%] mx-auto flex items-center justify-between md:flex-row flex-col bg-[#FAE8F4] rounded-[40px] lg:py-[70px] py-[40px] md:px-[30px] px-[30px] lg:pr-[100px]'>
                 <div data-aos="zoom-in" data-aos-delay="600" data-aos-duration="600">
                     <img src='https://cdni.iconscout.com/illustration/premium/thumb/location-tracking-app-4475005-3714158.png' alt='' />
