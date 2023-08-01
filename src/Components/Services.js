@@ -1,30 +1,4 @@
-const array = [
-    {
-        name: "Payment Done",
-        about: "Pay with a Visa or PayPal card and without much ado",
-        image: "https://png.pngtree.com/png-clipart/20220131/original/pngtree-entrepreneurs-announce-hiring-employees-to-work-in-the-company-png-image_7259406.png",
-        color: "#fef08a"
-    },
-    {
-        name: "Find Your Product",
-        about: "Wc offer sale of product through the Internet.",
-        image: "https://png.pngtree.com/png-clipart/20220131/original/pngtree-entrepreneurs-announce-hiring-employees-to-work-in-the-company-png-image_7259406.png",
-        color: "#e8c7c755"
-    },
-    {
-        name: "Print Out",
-        about: "Print out service gives you convenience if someday you need.",
-        image: "https://png.pngtree.com/png-clipart/20220131/original/pngtree-entrepreneurs-announce-hiring-employees-to-work-in-the-company-png-image_7259406.png",
-        color: "#d9f99d"
-
-    },
-    {
-        name: "Product Received",
-        about: "In our you can see the delay ome of your order.",
-        image: "https://png.pngtree.com/png-clipart/20220131/original/pngtree-entrepreneurs-announce-hiring-employees-to-work-in-the-company-png-image_7259406.png",
-        color: "#fee2e2"
-    }
-];
+import { arrayServices } from "../data";
 
 const ServicesSection = () => {
     return (
@@ -37,7 +11,7 @@ const ServicesSection = () => {
                 </div>
                 <div className='py-10 grid grid-cols-1 md:grid-cols-2 mx-auto p-auto'>
                     {
-                        array && array.map((item, ind) => {
+                        arrayServices && arrayServices.map((item, ind) => {
                             return (
                                 <div className='min-h-[370px] lg:min-h-[300px] max-w-[430px] p-100px rounded-es-[40px] rounded-tr-[40px] rounded-br-[40px] rounded-tl-[50%] flex justify-start items-center flex-col lg:flex-row relative' data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100" key={ind}>
                                     <div className='w-[80%] h-[80%] rounded-es-[40px] rounded-tr-[40px] rounded-br-[40px] rounded-tl-[50%] absolute right-0  z-[-2]' style={{ background: `${item.color}` }}>

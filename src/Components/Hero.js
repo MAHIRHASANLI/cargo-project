@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const HeroSection = () => {
     return (
         <section className='lg:min-h-[90vh] py-12 flex justify-center items-center'>
