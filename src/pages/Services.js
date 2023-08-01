@@ -29,7 +29,7 @@ const array = [
 const ServicesSection = () => {
     return (
         <section className='pt-16'>
-            <div className='lg:max-w-[80%] md:max-w-[80%] w-[90%] mx-auto'>
+            <div className='lg:max-w-[75%] md:max-w-[80%] w-[90%] mx-auto'>
                 <div className='text-center'>
                     <h2 className='mb-4 text-[28px] font-[600] leading-none  tracking-tight text-gray-900 md:text-[40px] lg:text-[44px] dark:text-white' data-aos="fade-down" data-aos-delay="100">Home Services We Offer</h2>
                     <p className='text-[15px] font-normal text-gray-500 lg:text-[19px] md:text-[17px] dark:text-gray-400 lg:mt-10 mt-5 max-w-[585px] mx-auto' data-aos="fade-down" data-aos-delay="200"
