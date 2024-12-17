@@ -1,5 +1,4 @@
 İstifadə olunan Texnologiyalar:
-
 1. React js
 2. Tailwind css
 3. React İcons
